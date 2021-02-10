@@ -1,0 +1,26 @@
+1: import java.io.*;
+2: 
+3: public class Main {
+4: 
+5: 	static String file = "Main.out";
+6: 
+7: 	public static void main(String[] args) throws IOException {
+8: 		BufferedReader in = new BufferedReader(
+9: 			new StringReader(BufferedInputFile.read("Main.java")));
+10: 
+11: 		// PrintWriter out = new PrintWriter(
+12: 		// 	new BufferedWriter(new FileWriter(file)));
+13: 
+14: 		PrintWriter out = new PrintWriter(file);
+15: 
+16: 		int lineCount = 1;
+17: 		String s;
+18: 
+19: 		while((s = in.readLine()) != null) {
+20: 			out.println(lineCount++ + ": " + s);
+21: 		}
+22: 		in.close();
+23: 		out.close();
+24: 		System.out.println(BufferedInputFile.read(file));
+25: 	}
+26: }

@@ -1,0 +1,10 @@
+1: um dois
+2: tres
+3: quatro um
+4: .
+5: cinco
+6: 
+7: seis um
+8: 
+9: sete oito ? nove 
+10: ...dEZ
